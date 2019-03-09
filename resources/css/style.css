@@ -41,6 +41,7 @@ body{
 
       #aboutme h3{
         margin-top: 1rem;
+        margin-right: 1rem;
         text-align: left;
         color: rgba(233, 227, 230, 1);
       }
@@ -51,9 +52,17 @@ body{
       #aboutme p{
         text-align: left;
         color: rgba(233, 227, 230, 1);
+        margin-right: 1rem;
       }
       #aboutme-mobile{
         display: none;
+      }
+
+      @media only screen and (min-width: 771px) and (max-height: 632px){
+        #aboutme{
+          margin: 5rem 2rem;
+          padding: 1rem;
+        }
       }
         @media only screen and (max-width: 770px){
           #about{
@@ -61,6 +70,7 @@ body{
           }
           #aboutme{
             margin: 5rem 2rem;
+            padding: 1rem;
           }
           #aboutme h3::before{
             content:"";
@@ -75,7 +85,28 @@ body{
             margin: 0;
             padding: 2rem 0;
           }
-
+          #aboutme-mobile p{
+            margin: 0 2rem;
+          }
+        }
+        @media only screen and (max-height: 426px){
+          #about{
+            height: 90vh;
+          }
+          #aboutme{
+            margin: 2.5rem 2rem;
+            padding: 1rem;
+          }
+          #aboutme p{
+            display: none;
+          }
+          #aboutme-mobile{
+            display:block;
+            color: black;
+            background-color: rgba(178, 170, 142, 1);
+            margin: 0;
+            padding: 2rem 0;
+          }
           #aboutme-mobile p{
             margin: 0 2rem;
           }
